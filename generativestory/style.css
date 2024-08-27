@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    font-weight: normal;
+    gap: 1rem;
+  }
+  
+  html{
+    font-size: 18px;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 1rem;
+    max-width: 1024px;
+  }
+  
+  h1{
+    text-align: center;
+    color: #00159a;
+    font-size:7rem;
+    margin-bottom: 60px;
+  }
+
+  p{
+    text-align: left;
+  }
+
+  a{
+    color: #00159a;
+  }
+
+  .three-four {
+    flex: 3 4 0;
+    aspect-ratio: 3 / 4;
+  }
+
+  .four-three {
+    flex: 4 3 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .four-four {
+    flex: 4 4 0;
+    aspect-ratio: 4 / 4;
+  }
+
+  figure{
+    margin: 0;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  figure img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border: 2px solid #00159a;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+
+@media screen and (max-width: 1010px) {
+
+    h1{
+      font-size: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+  
+    h1{
+      font-size: 4rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    main {
+      width: 90vw;
+    }
+    .locations-container {
+      flex-direction: column;
+    }
+    .facts {
+      width: 100%;
+    }
+    .row {
+      flex-direction: row;
+      align-items: center;
+    }
+   
+    .column{
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      display: flex;
+    }
+   
+    figure {
+      width: 100%;
+      align-items: center;
+    }
+
+    figure img{
+        max-width: 200px;
+    }
+   
+    img {
+      width: 100%;
+    }
+  
+    h1{
+      font-size: 3rem;
+    }
+  
+    .impressum-bar{
+      padding: 1px 0;
+      font-size: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+  

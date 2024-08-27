@@ -1,0 +1,222 @@
+*{
+  box-sizing: border-box;
+  font-weight: normal;
+  gap: 1rem;
+}
+
+html{
+  font-size: 18px;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 70vw;
+  margin: 0 auto;
+  gap: 1rem;
+  max-width: 1024px;
+}
+
+h1{
+  text-align: center;
+  color: #00159a;
+  font-size: 6.4rem;
+  margin-bottom: 60px;
+}
+
+p{
+  text-align: justify;
+  margin: 0;
+  font-size: 1rem;
+}
+
+section{
+  font-size: 1rem;
+}
+
+a{
+  color: #00159a;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #dc5400;
+  text-decoration: underline;
+}
+
+i{
+  color: #dc5400;
+}
+
+.float-left1 {
+float: left;
+margin: 5px 15px 0 0;
+max-width: 15%;
+flex: 3 4 0;
+aspect-ratio: 3 / 4;
+}
+
+.float-right {
+  float: right;
+  margin: 5px 15px 0 0;
+  max-width: 15%;
+  flex: 3 4 0;
+  aspect-ratio: 3 / 4;
+  }
+
+.three-four {
+flex: 3 4 0;
+aspect-ratio: 3 / 4;
+}
+
+.four-three {
+flex: 4 3 0;
+aspect-ratio: 4 / 3; 
+}
+
+.four-four {
+flex: 4 4 0;
+aspect-ratio: 4 / 4;
+}
+
+.nine-sixteen {
+  flex: 9 16 0;
+  aspect-ratio: 9 / 16;
+}
+
+img{
+width: 100%;
+height: auto;
+}
+
+figcaption {
+font-size: 0.9rem;
+font-weight: 400;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin: 0;
+padding: 0;
+gap: 1rem;
+margin-bottom: 20px;
+}
+
+.column section{
+  margin-bottom: 10px;
+}
+
+.row{
+display: flex;
+flex-direction: row;
+width: 100%;
+margin: 0;
+padding: 0;
+gap: 1rem;
+}
+
+.row2{
+display: flex;
+flex-direction: row;
+width: 100%;
+margin: 0;
+padding: 0;
+gap: 1rem;
+background-color: #dddddd;
+}
+
+figure{
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.25rem;
+}
+
+.row2 figure{
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.25rem;
+padding: 10px;
+background-color: #dddddd;
+}
+
+
+@media screen and (max-width: 1010px) {
+
+  h1{
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  h1{
+    font-size: 4rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+  }
+
+  figcaption{
+    font-size: 0.9rem;
+  }
+
+  section{
+    font-size: 0.9rem;
+  }
+
+  .float-right{
+    float: right;
+    margin: 10px 0 10px 15px;
+    max-width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 70vw;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+  figcaption{
+    font-size: 0.8rem;
+  }
+
+  section{
+    font-size: 0.8rem;
+  }
+
+  .float-right{
+    float: right;
+    margin: 10px 0 10px 15px;
+    max-width: 30%;
+  }
+}

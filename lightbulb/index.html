@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dokumentation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<main>
+	<script src="index.js"></script>
+	<h1>LIGHTBULB</h1>
+
+    <div class="column">
+        <section><img src="/images/bulb2.png" alt="" class="float-left1">
+        Für dieses Projekt wurde die <a href="https://teachablemachine.withgoogle.com">Teachable Machine von Google</a> verwendet. Dies ist ein webbasiertes Tool, mit dem Modelle für maschinelles Lernen erstellt werden können. Die Teachable Machine kann mit Bildern, Posen oder wie hier in dem Beispiel, mit Tönen trainiert werden. Der Benutzer sammelt zuerst die passenden Daten und trainiert daraufhin mit diesen Daten das Modell, sodass dieses Muster erkennen und unterschiedliche Daten auseinanderhalten kann. Die Daten werden dabei in unterschiedliche Kategorien, in sogenannte Klassen aufgeteilt, sodass die Teachable Machine bestimmte Daten einer Klasse zuordnen kann. Bei Audiodateien ist es wichtig zudem die Hintergrundgeräusche mit aufzunehmen, da diese sonst die anderen Dateien beeinträchtigen und das Training der Maschine beeinflussen können. Nach dem Training kann das Modell exportiert und in eigenen Projekten verwendet werden, wie zum Beispiel in der Website dieses LightBulb-Projektes. <br><br>
+        Bei dem Lightbulb-Projekt wurden die verschiedenen Töne von <i>c</i> bis <i>h</i> als Datensatz aufgenommen. Jeder Ton bekam eine eigene Klasse, damit die Teachable Machine die unterschiedlichen Töne unterscheiden kann. Unter den Audiodateien waren Aufnahmen der Töne am Klavier und in unterschiedlicher Weise gesungen dabei. Die Idee hinter dem LightBulb-Projekt besteht darin, dass der Besucher der Website eine Glühbirne durch singen zum Leuchten bringen soll. Je lauter der Ton dabei ist, desto heller scheint die Glühbirne.</section>
+
+    </div>
+
+    <div class="column">
+        <div class="row2">
+            <figure class="three-four">
+                <img src="/images/lb-startseite.png" alt="">
+                <figcaption>Abbildung1</figcaption>
+            </figure>
+
+            <figure class="three-four">
+                <img src="/images/lb-mikrofon.png" alt="">
+                <figcaption>Abbildung2</figcaption>
+            </figure>
+        </div>
+
+        <section>Wenn die Seite aufgerufen wird, erscheint eine Startseite <i>(Abb.1)</i>. Zu sehen ist eine nicht leuchtende Glühbirne, ein Button, um das Mikrofon anzuschalten, und zwei weitere Buttons, um zum Einen zum Impressum zu gelangen und zum anderen, um zu erfahren was genau man tun muss. <br> <br>Der Button zum Anschalten des Mikrofons ist wichtig, da der Besucher der Website zuerst bestätigen muss, dass die Seite Zugriff auf das Mikrofon des Geräts haben darf <i>(Abb.2)</i>. Im Code wird durch das Erlauben das trainierte Modell der Teachable Machine gestartet. Jedes Geräusch, was wahrgenommen wird, wird nun einer Klasse, also einem Ton oder dem Hintergrundgeräusch zugeordnet.</section>
+
+    </div>
+
+    <div class="column">
+
+        <section>Zudem ist nun auch jeder Klasse, bzw. jedem Ton eine anders farbige Glühbirne zugeordnet, welche dann bei dem jeweils erkannten Ton, den der Betrachter singt oder spielt, aufgerufen wird:</section>
+
+        <div class="row">
+            <figure class="three-four">
+                <img src="images_lb/bulb.png" alt="">
+                <figcaption>aus</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb1.png" alt="">
+                <figcaption>c</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb2.png" alt="">
+                <figcaption>d</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb3.png" alt="">
+                <figcaption>e</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb4.png" alt="">
+                <figcaption>f</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb5.png" alt="">
+                <figcaption>g</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb6.png" alt="">
+                <figcaption>a</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_lb/bulb7.png" alt="">
+                <figcaption>h</figcaption>
+            </figure>
+        </div>
+    </div> 
+
+    <div class="column">
+
+        <section>Klickt man den Button <i>Was muss ich tun?</i> Erscheint ein Satz. Der, dass der Betrachter singen muss, um die Glühbirne zum Leuchten zu bringen und je heller der Ton, desto heller das Licht. 
+        Unter dem Button <i>Impressum</i> sind die grundlegenden Daten zu finden: Was ist das für ein Projekt? Von wem ist das Projekt? Wo, in welchem Kontext ist es entstanden? Etc. </section>
+
+        <div class="row2">
+            <figure class="four-three">
+                <img src="/images/lb-was-muss-man-tun.png" alt="">
+            </figure>
+            <figure class="four-three">
+                <img src="/images/lb-impressum.png" alt="">
+            </figure>
+        </div>
+    </div>
+
+        <p> <a href="https://lightbulb-teachable-maschine.netlify.app">Lust es auszuprobieren? Klicke hier, um auf die Website zu kommen</a></p>
+        <p><a href="https://github.com/hbk-bs/teachable-machine-Mirea26">Hier kannst du auch den Code für dieses Projekt einsehen!</a></p> 
+         <br>
+         <br>
+	</main>
+</body>
+</html>

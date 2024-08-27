@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dokumentation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<main>
+	<script src="index.js"></script>
+	<h1>COLOR GENERATOR</h1>
+
+    <div class="column">
+        <section><img src="/images/cg-start1.png" alt="" class="float-left1">
+        Ein Large Language Modell ist ein KI-Programm, das mit einer Datenmenge trainiert wurde und Text oder andere Arten von Daten erkennen und interpretieren kann. Es basiert auf maschinellem Lernen, genau wie die Teachable Machine. Das LLM kann diese Daten allerdings nicht nur interpretieren, sondern auch selbst generieren. Ein Beispiel dafür ist ChatGPT, bei dem Text eingegeben wird und das LLM mit Text darauf antwortet. 
+        Die Art des Inputs und des Outputs können aber auch andere Arten von Daten betreffen. Wie zum Beispiel in dem Projekt des Color Generators. 
+        <br><br>
+        In diesem Projekt besteht der Input aus Zahlen, beziehungsweise aus der Position der Maus auf dem Bildschirm. Der Output ist ein Farbwert, der in Form eines oder mehreren Kreisen irgendwo auf dem Bildschirm erscheint. <img src="images_cg/farbkreis.jpg" alt="" class="float-right four-four"> <br> <br> Die Idee hinter diesem Projekt ist, dass der Besucher der Website ein Bild generieren kann, indem er mit der Maus auf den Bildschirm klickt. Der Bildschirm ist dabei in die verschiedenen Winkel eines Farbkreises aufgeteilt. Ganz links ist der Winkel 0 und ganz rechts der Winkel 360. Der Besucher der Website muss nun fünfmal auf den Bildschirm klicken. Dabei ist es egal, wo auf dem Bildschirm. Bei jedem Klick wird ein Winkel ausgewählt und alle fünf Winkel werden zusammenaddiert und wiederum durch fünf geteilt, wodurch ein Durchschnittswinkel berechnet wird. Dieser Durchschnittswinkel bestimmt dann die Farbe die im Output für die Kreise verwendet wird. <br> <br> Um das mit der Verteilung der Winkel auf dem Bildschirm zu verdeutlichen, hier ein Beispiel.
+        <i>Wird nun fünfmal an dieselbe Stelle auf dem Bildschirm geklickt, wie zum Beispiel ganz links, mittig oder ganz rechts, entstehen folgende Farben, passend zum Verlauf eines Farbkreises von den Winkeln 0 bis 360:</i> </section>
+    </div>
+
+    <div class="column">
+        <div class="row">
+            <figure class="nine-sixteen">
+                <img src="images_cg/rot.png" alt="">
+                <figcaption>links <br> ( &#126; 0°)</figcaption>
+            </figure>
+            <figure class="nine-sixteen">
+                <img src="images_cg/grün.png" alt="">
+                <figcaption> &#8594; </figcaption>
+            </figure>
+            <figure class="nine-sixteen">
+                <img src="images_cg/blau.png" alt="">
+                <figcaption>mittig</figcaption>
+            </figure>
+            <figure class="nine-sixteen">
+                <img src="images_cg/lila.png" alt="">
+                <figcaption> &#8594; </figcaption>
+            </figure>
+            <figure class="nine-sixteen">
+                <img src="images_cg/pink.png" alt="">
+                <figcaption>rechts <br> ( &#126; 360°)</figcaption>
+            </figure>
+        </div>
+    </div>
+
+        <!-- <section>Das heißt Input: 5 Winkel des Farbkreises durch 5 geteilt und Output: Durchschnittlicher Winkelwert in Form eines Kreises. </section>
+            <br>
+        <section><img src="/images/cg-save.png" alt="" class="float-right">Dies kann beliebig oft wiederholt werden. Sobald einem das entstandene Bild gefällt, kann es unter dem Save me - Button gespeichert werden. </section>
+            <br>
+        <section>Für dieses Projekt wird LLM.js verwendet. Dies ist eine JavaScript-Bibliothek. Sie ermöglicht es LLMs direkt in Webanwendungen zu integrieren. </section> -->
+
+
+    <p> <a href="https://color-generator-llm.netlify.app">Lust es auszuprobieren? Klicke hier, um auf die Website zu kommen</a></p>
+    <p><a href="https://github.com/hbk-bs/llm-Mirea26">Hier kannst du auch den Code für dieses Projekt einsehen!</a></p>
+    <br>
+    <br>
+	</main>
+</body>
+</html>
