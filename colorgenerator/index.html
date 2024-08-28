@@ -13,11 +13,11 @@
 	<h1>COLOR GENERATOR</h1>
 
     <div class="column">
-        <section><img src="/images/cg-start1.png" alt="" class="float-left1">
-        Ein Large Language Modell ist ein KI-Programm, das mit einer Datenmenge trainiert wurde und Text oder andere Arten von Daten erkennen und interpretieren kann. Es basiert auf maschinellem Lernen, genau wie die Teachable Machine. Das LLM kann diese Daten allerdings nicht nur interpretieren, sondern auch selbst generieren. Ein Beispiel dafür ist ChatGPT, bei dem Text eingegeben wird und das LLM mit Text darauf antwortet. 
-        Die Art des Inputs und des Outputs können aber auch andere Arten von Daten betreffen. Wie zum Beispiel in dem Projekt des Color Generators. 
+        <section><img src="images_cg/cg-start1.png" alt="" class="float-left1">
+        Bei diesem Projekt wurde mit einem Large Language Modell (LLM) gearbeitet. Ein LLM ist ein KI-Programm, das mit einer Datenmenge trainiert wurde und Text oder andere Arten von Daten erkennen und interpretieren kann. Es basiert auf maschinellem Lernen, genau wie die Teachable Machine. Das LLM kann Daten allerdings, anders als die Teachable Machine, nicht nur interpretieren, sondern auch selbst generieren. Ein Beispiel dafür ist ChatGPT, bei dem Text eingegeben wird und das LLM mit Text darauf. <br>
+        Die Art des Inputs und des Outputs können aber auch andere Arten von Daten betreffen, wie zum Beispiel in dem Projekt des Color Generators. 
         <br><br>
-        In diesem Projekt besteht der Input aus Zahlen, beziehungsweise aus der Position der Maus auf dem Bildschirm. Der Output ist ein Farbwert, der in Form eines oder mehreren Kreisen irgendwo auf dem Bildschirm erscheint. <img src="images_cg/farbkreis.jpg" alt="" class="float-right four-four"> <br> <br> Die Idee hinter diesem Projekt ist, dass der Besucher der Website ein Bild generieren kann, indem er mit der Maus auf den Bildschirm klickt. Der Bildschirm ist dabei in die verschiedenen Winkel eines Farbkreises aufgeteilt. Ganz links ist der Winkel 0 und ganz rechts der Winkel 360. Der Besucher der Website muss nun fünfmal auf den Bildschirm klicken. Dabei ist es egal, wo auf dem Bildschirm. Bei jedem Klick wird ein Winkel ausgewählt und alle fünf Winkel werden zusammenaddiert und wiederum durch fünf geteilt, wodurch ein Durchschnittswinkel berechnet wird. Dieser Durchschnittswinkel bestimmt dann die Farbe die im Output für die Kreise verwendet wird. <br> <br> Um das mit der Verteilung der Winkel auf dem Bildschirm zu verdeutlichen, hier ein Beispiel.
+        In diesem Projekt besteht der Input aus Zahlen, beziehungsweise aus der Position der Maus auf dem Bildschirm. Der Output ist ein Farbwert, der in Form eines oder mehreren Kreisen irgendwo auf dem Bildschirm erscheint. <br> <br> Zu Beginn wurde bei dem Projekt mithilfe von <a href="https://ollama.com">Ollama</a> gearbeitet. Dies ist eine Software, mit der LLMs lokal auf dem Computer ausgeführt werden können. Da das Projekt letztendlich aber als Website nicht nur lokal auf einem Computer, sondern auf allen möglichen Geräten funktionieren soll, wurde zum Schluss mit <i>OpenAIs GPT 3.5</i> gearbeitet. Dieses Modell ermöglicht es LLMs direkt in Webanwendungen zu integrieren und bereitzustellen, um es auf allen Geräten mit Internetzugang zugänglich zu machen. <br><br> <img src="images_cg/farbkreis.jpg" alt="" class="float-right four-four">  Die Idee hinter diesem Projekt ist, dass der Besucher der Website ein Bild generieren kann, indem er mit der Maus auf den Bildschirm klickt. Der Bildschirm ist dabei in die verschiedenen Winkel eines Farbkreises aufgeteilt. Ganz links ist der Winkel 0 und ganz rechts der Winkel 360. Der Besucher der Website muss nun fünfmal auf den Bildschirm klicken. Dabei ist es egal, wo auf dem Bildschirm. Bei jedem Klick wird ein Winkel ausgewählt und alle fünf Winkel werden zusammenaddiert und wiederum durch fünf geteilt, wodurch ein Durchschnittswinkel berechnet wird. Dieser Durchschnittswinkel bestimmt dann die Farbe die im Output für die Kreise verwendet wird. <br> <br> Um das mit der Verteilung der Winkel auf dem Bildschirm zu verdeutlichen, hier ein Beispiel.
         <i>Wird nun fünfmal an dieselbe Stelle auf dem Bildschirm geklickt, wie zum Beispiel ganz links, mittig oder ganz rechts, entstehen folgende Farben, passend zum Verlauf eines Farbkreises von den Winkeln 0 bis 360:</i> </section>
     </div>
 
@@ -46,11 +46,19 @@
         </div>
     </div>
 
-        <!-- <section>Das heißt Input: 5 Winkel des Farbkreises durch 5 geteilt und Output: Durchschnittlicher Winkelwert in Form eines Kreises. </section>
-            <br>
-        <section><img src="/images/cg-save.png" alt="" class="float-right">Dies kann beliebig oft wiederholt werden. Sobald einem das entstandene Bild gefällt, kann es unter dem Save me - Button gespeichert werden. </section>
-            <br>
-        <section>Für dieses Projekt wird LLM.js verwendet. Dies ist eine JavaScript-Bibliothek. Sie ermöglicht es LLMs direkt in Webanwendungen zu integrieren. </section> -->
+    <div class="column">
+        <section>Das Klicken auf dem Bildschirm kann beliebig oft wiederholt werden. Somit können auch viele verschieden farbige Kreise erstellt werden. Dadurch, dass die Kreise sich auch überlappen können und etwas durchsichtig sind, können sich auch zwei oder mehrere Farben vermischen <i>(Abb. 1)</i>. <br> Sobald einem das entstandene Bild gefällt, kann es unter dem <i>Save Image</i>-Button gespeichert werden <i>(Abb. 2)</i>.</section>
+        <div class="row2">
+            <figure class="three-four">
+                <img src="images_cg/vermischen_klein.png" alt="">
+                <figcaption>Abbildung 1</figcaption>
+            </figure>
+            <figure class="three-four">
+                <img src="images_cg/cg-save.png" alt="">
+                <figcaption>Abbildung 2</figcaption>
+            </figure>
+        </div>
+    </div>
 
 
     <p> <a href="https://color-generator-llm.netlify.app">Lust es auszuprobieren? Klicke hier, um auf die Website zu kommen</a></p>

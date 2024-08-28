@@ -168,6 +168,16 @@ figure{
       margin: 10px 0 10px 15px;
       max-width: 40%;
     }
+
+    .row2{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+      background-color: #dddddd;
+      }
   }
   
   
@@ -197,5 +207,26 @@ figure{
       margin: 10px 0 10px 15px;
       max-width: 40%;
     }
+
+    .row2{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+      background-color: #dddddd;
+      }
+
+      .row2 figure{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 10px;
+        background-color: #dddddd;
+      }
   }
   
