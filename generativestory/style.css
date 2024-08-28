@@ -42,6 +42,13 @@ h4 {
   align-self: flex-start;
 }
 
+h5 {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
 p{
   text-align: justify;
   margin: 0;
@@ -121,7 +128,7 @@ width: 100%;
 margin: 0;
 padding: 0;
 gap: 1rem;
-/* margin-bottom: 5px; */
+margin-bottom: 20px;
 }
 
 .column section{
@@ -145,6 +152,8 @@ margin: 0;
 padding: 0;
 gap: 1rem;
 background-color: #dddddd;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 
 figure{
@@ -207,6 +216,8 @@ background-color: #dddddd;
     padding: 0;
     gap: 1rem;
     background-color: #dddddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
 }
 
@@ -246,5 +257,7 @@ background-color: #dddddd;
     padding: 0;
     gap: 1rem;
     background-color: #dddddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
 }

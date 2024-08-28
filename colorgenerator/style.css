@@ -34,6 +34,13 @@ h1{
   margin-bottom: 60px;
 }
 
+h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
 p{
   text-align: justify;
   margin: 0;
@@ -127,6 +134,8 @@ width: 100%;
 margin: 0;
 padding: 0;
 gap: 1rem;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 
 .row2{
@@ -137,6 +146,8 @@ margin: 0;
 padding: 0;
 gap: 1rem;
 background-color: #dddddd;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 
 figure{
@@ -199,6 +210,8 @@ background-color: #dddddd;
     padding: 0;
     gap: 1rem;
     background-color: #dddddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
 }
 
@@ -217,7 +230,7 @@ background-color: #dddddd;
   }
 
   figcaption{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   section{
@@ -238,5 +251,7 @@ background-color: #dddddd;
     padding: 0;
     gap: 1rem;
     background-color: #dddddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
 }
