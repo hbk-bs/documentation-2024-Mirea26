@@ -224,7 +224,7 @@ background-color: #dddddd;
 
 @media screen and (max-width: 768px) {
   main {
-    width: 70vw;
+    width: 90vw;
   }
 
   h1{
@@ -236,11 +236,11 @@ background-color: #dddddd;
   }
 
   figcaption{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   section{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .float-right{
