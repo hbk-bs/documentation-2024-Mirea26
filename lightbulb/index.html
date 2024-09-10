@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang= "de">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dokumentation</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/bulb.ico" type="image/x-icon">
 </head>
 <body>
 	<main>
@@ -13,16 +13,16 @@
 	<h1>LIGHTBULB</h1>
 
     <div class="column">
-        <section><img src="images_lb/bulb2.png" alt="" class="float-left1">
-        Für dieses Projekt wurde die <a href="https://teachablemachine.withgoogle.com">Teachable Machine von Google</a> verwendet. Dies ist ein webbasiertes Tool, mit dem Modelle für maschinelles Lernen erstellt werden können. Die Teachable Machine kann mit Bildern, Posen oder wie hier in dem Beispiel, mit Tönen trainiert werden. Der Benutzer sammelt zuerst die passenden Daten und trainiert daraufhin mit diesen Daten das Modell, sodass dieses Muster erkennen und unterschiedliche Daten auseinanderhalten kann. Die Daten werden dabei in unterschiedliche Kategorien, in sogenannte Klassen unterteilt, sodass die Teachable Machine bestimmte Daten einer Klasse zuordnen kann. Für Projekte, bei denen die Teachable Machine mit Audiodateien trainiert wird, ist es wichtig zudem die Hintergrundgeräusche aufzunehmen und einer extra Klasse zuzuordnen. Dies dient dazu, dass die Teachable Machine die Hintergrundgeräusche von den anderen Audiodateien unterscheiden kann. Nach dem Training kann das Modell exportiert und in eigenen Projekten verwendet werden, wie zum Beispiel in diesem LightBulb-Projekt. 
-        <br><br>
-        Bei dem LightBulb-Projekt wurden die verschiedenen Töne von <i>c</i> bis <i>h</i> als Datensatz aufgenommen. Jeder Ton bekam eine eigene Klasse, damit die Teachable Machine die verschiedenen Töne unterscheiden kann. Um die Machine verlässlicher zu trainieren, ist es wichtig, eine Varianz in den Dateien zu gewährleisten. Deshalb wurden in dem Fall nicht nur die jeweiligen Töne am Klavier aufgenommen, sondern auch in unterschiedlicher Weise gesungen.
-        <br> 
-        Die Idee hinter dem LightBulb-Projekt besteht darin, dass der Besucher der Website eine Glühbirne durch Singen zum Leuchten bringen soll. Je höher der Ton dabei ist, desto heller scheint die Glühbirne. 
-        <br><br> 
-        Wenn die Seite nun aufgerufen wird, erscheint eine Startseite <i>(Abb.1)</i>. Zu sehen ist eine nicht leuchtende Glühbirne, ein Button, um das Mikrofon anzuschalten und zwei weitere Buttons, um zum einen zum Impressum zu gelangen und zum anderen, um zu erfahren was genau getan werden muss.
-        <br><br>
-        Der Button zum Anschalten des Mikrofons ist wichtig, da der Besucher der Website zuerst bestätigen muss, dass die Seite Zugriff auf das Mikrofon des Geräts haben darf <i>(Abb.2)</i>. Im Code wird durch das Erlauben das trainierte Modell der Teachable Machine gestartet. Jedes Geräusch, das wahrgenommen wird, wird nun einer Klasse, also einem Ton oder dem Hintergrundgeräusch zugeordnet.</section>
+        <section><p><img src="images_lb/bulb2.png" alt="" class="float-left1">
+        Für dieses Projekt wurde die <a href="https://teachablemachine.withgoogle.com">Teachable Machine von Google</a> verwendet. Dies ist ein webbasiertes Tool, mit dem Modelle für maschinelles Lernen erstellt werden können. Die Teachable Machine kann mit Bildern, Posen oder wie hier in dem Beispiel, mit Tönen trainiert werden. Der Benutzer sammelt zuerst die passenden Daten und trainiert daraufhin mit diesen Daten das Modell, sodass dieses Muster erkennen und unterschiedliche Daten auseinanderhalten kann. Die Daten werden dabei in unterschiedliche Kategorien, in sogenannte Klassen unterteilt, sodass die Teachable Machine bestimmte Daten einer Klasse zuordnen kann. Für Projekte, bei denen die Teachable Machine mit Audiodateien trainiert wird, ist es wichtig zudem die Hintergrundgeräusche aufzunehmen und einer extra Klasse zuzuordnen. Dies dient dazu, dass die Teachable Machine die Hintergrundgeräusche von den anderen Audiodateien unterscheiden kann. Nach dem Training kann das Modell exportiert und in eigenen Projekten verwendet werden, wie zum Beispiel in diesem LightBulb-Projekt. </p>
+        
+        <p>Bei dem LightBulb-Projekt wurden die verschiedenen Töne von <i>c</i> bis <i>h</i> als Datensatz aufgenommen. Jeder Ton bekam eine eigene Klasse, damit die Teachable Machine die verschiedenen Töne unterscheiden kann. Um die Machine verlässlicher zu trainieren, ist es wichtig, eine Varianz in den Dateien zu gewährleisten. Deshalb wurden in dem Fall nicht nur die jeweiligen Töne am Klavier aufgenommen, sondern auch in unterschiedlicher Weise gesungen.</p>
+        
+        <p>Die Idee hinter dem LightBulb-Projekt besteht darin, dass der Besucher der Website eine Glühbirne durch Singen zum Leuchten bringen soll. Je höher der Ton dabei ist, desto heller scheint die Glühbirne. </p>
+       
+        <p>Wenn die Seite nun aufgerufen wird, erscheint eine Startseite <i>(Abb.1)</i>. Zu sehen ist eine nicht leuchtende Glühbirne, ein Button, um das Mikrofon anzuschalten und zwei weitere Buttons, um zum einen zum Impressum zu gelangen und zum anderen, um zu erfahren was genau getan werden muss.</p>
+        
+        <p>Der Button zum Anschalten des Mikrofons ist wichtig, da der Besucher der Website zuerst bestätigen muss, dass die Seite Zugriff auf das Mikrofon des Geräts haben darf <i>(Abb.2)</i>. Im Code wird durch das Erlauben das trainierte Modell der Teachable Machine gestartet. Jedes Geräusch, das wahrgenommen wird, wird nun einer Klasse, also einem Ton oder dem Hintergrundgeräusch zugeordnet.</p></section>
 
         <div class="row2">
             <figure class="three-four">
@@ -74,7 +74,9 @@
             </figure>
         </div>
 
-        <section>Klickt man den Button <i>Was muss ich tun?</i> erscheint ein Satz, der erläutert was die Aufgabe ist <i>(Abb. 3)</i>. <br>
+        <section>Wichtig war es bei dem Projekt mit schon vorhandenem Code zu arbeiten. Der Code der durch die Teachable Machine generiert wurde, musste in einer Website eingebaut werden und mit den Glühbirnen in Zusammenhang gesetzt werden.  </section>
+
+        <!-- <section>Klickt man den Button <i>Was muss ich tun?</i> erscheint ein Satz, der erläutert was die Aufgabe ist <i>(Abb. 3)</i>. <br>
         Unter dem Button <i>Impressum</i> sind die grundlegenden Daten zu finden: Was ist das für ein Projekt? Von wem ist das Projekt? Wo, in welchem Kontext ist es entstanden? Etc. <i>(Abb.4)</i></section>
 
         <div class="row2">
@@ -86,15 +88,15 @@
                 <img src="images_lb/lb-impressum.png" alt="">
                 <figcaption>Abbildung 4</figcaption>
             </figure>
-        </div>
+        </div> -->
     </div>
 
     <div class="column">
         <h4> <a href="https://lightbulb-teachable-maschine.netlify.app">Lust es auszuprobieren und die Glühbirne zum Leuchten zu bringen? Klicke hier, um auf die Website zu kommen</a></h4>
         <h4><a href="https://github.com/hbk-bs/teachable-machine-Mirea26">Hier kannst du auch den Code für dieses Projekt einsehen!</a></h4> 
     </div>
-         <br>
-         <br>
+
+    <div class="column"></div>
 	</main>
 </body>
 </html>

@@ -42,9 +42,8 @@
   }
 
   p{
-    text-align: justify;
-    margin: 0;
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   section{
@@ -202,7 +201,7 @@ figure{
     }
 
     p{
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 
     figcaption{

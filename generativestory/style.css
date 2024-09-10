@@ -50,9 +50,8 @@ h5 {
 }
 
 p{
-  text-align: justify;
-  margin: 0;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 section{
@@ -232,7 +231,7 @@ background-color: #dddddd;
   }
 
   p{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   figcaption{
