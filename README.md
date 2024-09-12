@@ -1,9 +1,9 @@
 
 Dokumentation
 
-von Mirea Černota
-an der HBK in Braunschweig
-Dozent: Fabian Morón Zifas
+von Mirea Černota 
+an der HBK in Braunschweig bei
+Dozent Fabian Morón Zifas. 
 
 Im Grundlagenkurs der Digitalen Kommunikation im Sommersemester 2024 stand das Thema KI im Mittelpunkt. 
 Das Semester bestand aus drei großen Projekten:
